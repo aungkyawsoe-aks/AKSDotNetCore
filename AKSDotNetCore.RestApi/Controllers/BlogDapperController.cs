@@ -54,7 +54,7 @@ namespace AKSDotNetCore.RestApi.Controllers
             return Ok(item);
         }
 
-        [HttpPost]
+        [HttpPost("{id}")]
         public IActionResult CreateBlog(BlogDataModel blog)
         {
             string query = @"INSERT INTO [dbo].[Tbl_Blog]
@@ -95,7 +95,7 @@ namespace AKSDotNetCore.RestApi.Controllers
         }
 
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public IActionResult UpdateBlogs(int id, BlogDataModel blog)
         {
             using IDbConnection db = new SqlConnection(_sqlConnectionStringBuilder.ConnectionString);

@@ -55,7 +55,7 @@ namespace AKSDotNetCore.RestApi.Controllers
             return Ok(message);
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public IActionResult UpdateBlogs(int id, BlogDataModel blog)
         {
             var item = _dbContext.Blogs.FirstOrDefault(x => x.Blog_Id == id);
@@ -85,7 +85,7 @@ namespace AKSDotNetCore.RestApi.Controllers
             return Ok(message);
         }
 
-        [HttpPatch]
+        [HttpPatch("{id}")]
         public IActionResult PatchBlogs(int id, BlogDataModel blog)
         {
             var item = _dbContext.Blogs.FirstOrDefault(x => x.Blog_Id == id);

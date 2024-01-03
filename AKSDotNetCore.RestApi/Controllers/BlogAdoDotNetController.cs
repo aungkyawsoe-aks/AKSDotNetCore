@@ -129,7 +129,7 @@ namespace AKSDotNetCore.RestApi.Controllers
         }
 
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public IActionResult UpdateBlogs(int id, BlogDataModel blog)
         {
             SqlConnection connection = new SqlConnection(_sqlConnectionStringBuilder.ConnectionString);
@@ -190,7 +190,7 @@ namespace AKSDotNetCore.RestApi.Controllers
         }
 
 
-        [HttpPatch]
+        [HttpPatch("{id}")]
         public IActionResult PatchBlogs(int id, BlogDataModel blog)
         {
             SqlConnection connection = new SqlConnection(_sqlConnectionStringBuilder.ConnectionString);

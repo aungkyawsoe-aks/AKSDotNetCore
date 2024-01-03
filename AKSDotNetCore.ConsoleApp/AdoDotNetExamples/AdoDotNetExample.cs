@@ -13,11 +13,11 @@ namespace AKSDotNetCore.ConsoleApp.AdoDotNetCoreExamples
         public void Run()
         {
             Read();
-            Edit(2);
-            Edit(2000);
-            Create("ado title", "ado author", "ado content");
-            Update(13, "Test Title", "Test Author", "Test Content");
-            Delete(15);
+            //Edit(2);
+            //Edit(2000);
+            //Create("ado title", "ado author", "ado content");
+            //Update(13, "Test Title", "Test Author", "Test Content");
+            //Delete(15);
         }
 
         private void Read()
