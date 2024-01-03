@@ -15,10 +15,10 @@ Console.WriteLine("Hello, World!");
 //EFCoreExample eFCoreExample = new EFCoreExample();
 //eFCoreExample.Run();
 
-//HttpClientExample httpClientExample = new HttpClientExample();
-//await httpClientExample.Run();
+HttpClientExample httpClientExample = new HttpClientExample();
+await httpClientExample.Run();
 
-RestClientExample restClientExample = new RestClientExample();
-await restClientExample.Run();
+//RestClientExample restClientExample = new RestClientExample();
+//await restClientExample.Run();
 
 Console.ReadKey();
