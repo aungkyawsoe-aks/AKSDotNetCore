@@ -10,9 +10,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKSDotNetCore.RestApi", "AKSDotNetCore.RestApi\AKSDotNetCore.RestApi.csproj", "{4EB983EE-2777-4789-8670-D6B201445C19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSDotNetCore.RestApi", "AKSDotNetCore.RestApi\AKSDotNetCore.RestApi.csproj", "{4EB983EE-2777-4789-8670-D6B201445C19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKSDotNetCore.MinimalApi", "AKSDotNetCore.MinimalApi\AKSDotNetCore.MinimalApi.csproj", "{0E629F93-E770-4192-9D33-4DEA2298D3A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSDotNetCore.MinimalApi", "AKSDotNetCore.MinimalApi\AKSDotNetCore.MinimalApi.csproj", "{0E629F93-E770-4192-9D33-4DEA2298D3A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKSDotNetCore.AtmConsoleApp", "AKSDotNetCore.AtmConsoleApp\AKSDotNetCore.AtmConsoleApp.csproj", "{10F96D8F-18AD-4FA1-AF65-08A502B97A70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{0E629F93-E770-4192-9D33-4DEA2298D3A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E629F93-E770-4192-9D33-4DEA2298D3A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E629F93-E770-4192-9D33-4DEA2298D3A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10F96D8F-18AD-4FA1-AF65-08A502B97A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10F96D8F-18AD-4FA1-AF65-08A502B97A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10F96D8F-18AD-4FA1-AF65-08A502B97A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10F96D8F-18AD-4FA1-AF65-08A502B97A70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
