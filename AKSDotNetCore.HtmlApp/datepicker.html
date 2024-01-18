@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="plugins/Datepicker-v1.0.10/datepicker.min.css">
+</head>
+
+<body>
+    <input data-toggle="datepicker">
+    <textarea data-toggle="datepicker"></textarea>
+    <div data-toggle="datepicker"></div>
+
+    <div><input type="text" id="date-picker" />
+        <button type="button" id="test">
+            <i class="fa-duotone fa-calendar-days"></i>
+            test
+        </button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="plugins/Datepicker-v1.0.10/datepicker.min.js"></script>
+
+    <script>
+        $('[data-toggle="datepicker"]').datepicker({
+            autoHide: true,
+            format: 'dd/mm/yyyy'
+        });
+        $('#date-picker').datepicker({
+            autoHide: true,
+            format: 'dd/mm/yyyy',
+            trigger: '#test'
+        });
+    </script>
+</body>
+
+</html>
