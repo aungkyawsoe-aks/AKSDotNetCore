@@ -1,0 +1,41 @@
+@media screen and (max-width: 600px) {
+    table.manage-table-form {
+        border: 0;
+    }
+
+    table.manage-table-form caption {
+        font-size: 1.3em;
+    }
+
+    table.manage-table-form th {
+        display: none;
+    }
+
+    table.manage-table-form th:nth-child(1) {
+        display: grid;
+    }
+
+    table.manage-table-form tbody tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .9em;
+    }
+
+    table.manage-table-form td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    table.manage-table-form td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table.manage-table-form td:last-child {
+        border-bottom: 0;
+    }
+}
