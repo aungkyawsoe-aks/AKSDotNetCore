@@ -1,0 +1,24 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<form method="post" action="/Blog/Save">
+    <div class="mb-3">
+        <label class="form-label">Title</label>
+        <input type="text" class="form-control" name="Blog_Title">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Author</label>
+        <input type="text" class="form-control" name="Blog_Author">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Content</label>
+        <input type="text" class="form-control" name="Blog_Content">
+    </div>
+
+    <a href="/Blog" class="btn btn-dark">Cancel</a>
+    <button type="submit" class="btn btn-success">Save</button>
+</form>
+
