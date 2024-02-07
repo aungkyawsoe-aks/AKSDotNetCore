@@ -18,4 +18,9 @@ namespace AKSDotNetCore.MvcApp.Models
         public string? Blog_Content { get; set; }
 
     }
+
+    public class PolarAreaChartModel
+    {
+        public List<int> Series { get; set;}
+    }
 }
