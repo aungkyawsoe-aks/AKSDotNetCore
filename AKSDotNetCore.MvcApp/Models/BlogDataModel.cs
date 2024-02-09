@@ -23,4 +23,35 @@ namespace AKSDotNetCore.MvcApp.Models
     {
         public List<int> Series { get; set;}
     }
+
+    public class ColumnChartModel
+    {
+        public List<string> Labels { get; set;}
+
+        public List<int> Data {  get; set;}
+    }
+
+    #region HighCharts
+    public class WithDataLabelsChartModel
+    {
+        public List<string> Categories { get; set; }
+
+        public List<double> RegData { get; set; }
+
+        public List<double> TalData { get; set; }
+    }
+
+    public class RadialBarChartModel
+    {
+        public List<string> Categories { get; set; }
+
+        public List<int> Gdata { get; set; }
+
+        public List<int> Sdata { get; set; }
+
+        public List<int> Bdata { get; set; }
+    }
+
+    #endregion
+
 }

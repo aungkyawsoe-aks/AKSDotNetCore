@@ -1,0 +1,37 @@
+﻿@model ColumnChartModel
+
+@{
+    List<string> _labels = Model.Labels;
+    List<int> _data = Model.Data;
+}
+
+<div>
+    <canvas id="myChart"></canvas>
+</div>
+
+@section scripts {
+    <script>
+        let _labels = @(Html.Raw(JsonConvert.SerializeObject(_labels)));
+        let _data = @(Html.Raw(JsonConvert.SerializeObject(_data)));
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: _labels,
+                datasets: [{
+                    label: '# of Votes',
+                    data: _data,
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+}
