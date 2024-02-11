@@ -24,12 +24,40 @@ namespace AKSDotNetCore.MvcApp.Models
         public List<int> Series { get; set;}
     }
 
+    #region ChartJs
+
+    //ColumnChart
     public class ColumnChartModel
     {
-        public List<string> Labels { get; set;}
+        public List<string> Labels { get; set; }
 
-        public List<int> Data {  get; set;}
+        public List<int> Data { get; set; }
     }
+
+    //ScatterChart
+    public class Data
+    {
+        public double X { get; set; }
+
+        public double Y { get; set; }
+    }
+
+    public class ScatterChartModel
+    {
+        public List<Data> Datas { get; set; }
+    }
+
+    //MixedChart
+    public class MixedChartModel
+    {
+        public List<string> Labels { get; set; }
+
+        public List<int> Bdata { get; set; }
+
+        public List<int> Ldata { get; set; }   
+    }
+
+    #endregion
 
     #region HighCharts
     public class WithDataLabelsChartModel
@@ -52,6 +80,35 @@ namespace AKSDotNetCore.MvcApp.Models
         public List<int> Bdata { get; set; }
     }
 
+    #endregion
+
+    #region CanvasJs
+    //BarChart
+    public class DataPoint
+    {
+        public int Y { get; set; }
+
+        public string Label { get; set; }  
+
+    }
+
+    public class BarChartModel
+    {
+        public List<DataPoint> DataPoints { get; set; }
+    }
+
+    //SplineChart
+    public class SpdataPoint
+    {
+        public DateTime X { get; set; }
+
+        public Double Y { get; set; }
+    }
+
+    public class SplineChartModel
+    {
+        public List<SpdataPoint> SpdataPoints { get; set; }
+    }
     #endregion
 
 }
