@@ -13,12 +13,12 @@ namespace AKSDotNetCore.ConsoleApp.RefitExamples
         private readonly IBlogApi _gitHubApi = RestService.For<IBlogApi>("https://localhost:7061");
         public async Task Run()
         {
-            //await Read();
+            await Read();
             //await Edit(200);
             //await Edit(24);
             //await Create("refit title", "refit author", "refit content");
             //await Update(28, "Title", "Test Author", "Test Content");
-            await Delete(28);
+            //await Delete(28);
         }
 
         private async Task Read()

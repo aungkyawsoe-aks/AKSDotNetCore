@@ -1,5 +1,8 @@
+using AKSDotNetCore.ConsoleApp.RefitExamples;
 using AKSDotNetCore.MvcApp;
 using Microsoft.EntityFrameworkCore;
+using Refit;
+using RestSharp;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +13,26 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
     string connectionString = builder.Configuration.GetConnectionString("DbConnection")!;
     opt.UseSqlServer(connectionString);
 });
+
+//builder.Services.AddScoped<HttpClient>();
+builder.Services.AddScoped(n => 
+{
+    HttpClient httpClient = new HttpClient()
+    {
+        BaseAddress = new Uri(builder.Configuration.GetSection("ApiUrl").Value!)
+    };
+    return httpClient;
+});
+
+builder.Services.AddScoped(n =>
+{
+    RestClient restClient = new RestClient(builder.Configuration.GetSection("ApiUrl").Value!);
+    return restClient;
+});
+
+builder.Services
+    .AddRefitClient<IBlogApi>()
+    .ConfigureHttpClient(c => c.BaseAddress = new Uri(builder.Configuration.GetSection("ApiUrl").Value!));
 
 var app = builder.Build();
 

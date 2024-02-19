@@ -1,0 +1,36 @@
+﻿@model List<BlogDataModel>
+
+@{
+    ViewData["Title"] = "HttpClient";
+    int count = 0;
+}
+
+<a href="/BlogHttpClient/Create" class="btn btn-success">New</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Action</th>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">Content</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@(++count)</th>
+                <th scope="row">
+                    <a href="/BlogHttpClient/Edit/@item.Blog_Id" class="btn btn-warning">Edit</a>
+                    <a href="/BlogHttpClient/Delete/@item.Blog_Id" class="btn btn-danger">Delete</a>
+                </th>
+                <td>@item.Blog_Title</td>
+                <td>@item.Blog_Author</td>
+                <td>@item.Blog_Content</td>
+            </tr>
+        }
+
+    </tbody>
+</table>

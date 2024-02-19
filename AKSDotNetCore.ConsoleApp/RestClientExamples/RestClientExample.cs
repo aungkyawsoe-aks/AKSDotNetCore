@@ -15,11 +15,11 @@ namespace AKSDotNetCore.ConsoleApp.RestClientExamples
 
         public async Task Run()
         {
-            //await Read();
+            await Read();
             //await Edit(50);
             //await Edit(22);
             //await Create("rest2 title", "rest author", "rest content");
-            await Update(20, "Rest Title", "Test Author", "Test Content");
+            //await Update(20, "Rest Title", "Test Author", "Test Content");
             //await Delete(25);
         }
 
