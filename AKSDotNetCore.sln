@@ -12,11 +12,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSDotNetCore.RestApi", "AKSDotNetCore.RestApi\AKSDotNetCore.RestApi.csproj", "{4EB983EE-2777-4789-8670-D6B201445C19}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSDotNetCore.MinimalApi", "AKSDotNetCore.MinimalApi\AKSDotNetCore.MinimalApi.csproj", "{0E629F93-E770-4192-9D33-4DEA2298D3A4}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSDotNetCore.AtmConsoleApp", "AKSDotNetCore.AtmConsoleApp\AKSDotNetCore.AtmConsoleApp.csproj", "{10F96D8F-18AD-4FA1-AF65-08A502B97A70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKSDotNetCore.MvcApp", "AKSDotNetCore.MvcApp\AKSDotNetCore.MvcApp.csproj", "{F93B8047-5DBC-4934-A10C-B326E1470197}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSDotNetCore.MvcApp", "AKSDotNetCore.MvcApp\AKSDotNetCore.MvcApp.csproj", "{F93B8047-5DBC-4934-A10C-B326E1470197}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKSDotNetCore.MinimalApi", "AKSDotNetCore.MinimalApi\AKSDotNetCore.MinimalApi.csproj", "{CCAAC556-63F5-47E2-AF97-139534B4F732}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,10 +32,6 @@ Global
 		{4EB983EE-2777-4789-8670-D6B201445C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EB983EE-2777-4789-8670-D6B201445C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EB983EE-2777-4789-8670-D6B201445C19}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0E629F93-E770-4192-9D33-4DEA2298D3A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E629F93-E770-4192-9D33-4DEA2298D3A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E629F93-E770-4192-9D33-4DEA2298D3A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0E629F93-E770-4192-9D33-4DEA2298D3A4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{10F96D8F-18AD-4FA1-AF65-08A502B97A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{10F96D8F-18AD-4FA1-AF65-08A502B97A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10F96D8F-18AD-4FA1-AF65-08A502B97A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -44,6 +40,10 @@ Global
 		{F93B8047-5DBC-4934-A10C-B326E1470197}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F93B8047-5DBC-4934-A10C-B326E1470197}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F93B8047-5DBC-4934-A10C-B326E1470197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCAAC556-63F5-47E2-AF97-139534B4F732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCAAC556-63F5-47E2-AF97-139534B4F732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCAAC556-63F5-47E2-AF97-139534B4F732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCAAC556-63F5-47E2-AF97-139534B4F732}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

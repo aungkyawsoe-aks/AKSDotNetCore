@@ -110,5 +110,4 @@ namespace AKSDotNetCore.MvcApp.Models
         public List<SpdataPoint> SpdataPoints { get; set; }
     }
     #endregion
-
 }

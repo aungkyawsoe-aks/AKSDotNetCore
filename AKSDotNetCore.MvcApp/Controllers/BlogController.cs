@@ -21,6 +21,28 @@ namespace AKSDotNetCore.MvcApp.Controllers
             return View(lst);
         }
 
+        [ActionName("List")]
+        public async Task<IActionResult> List(int pageNo = 1 , int pageSize = 10)
+        {
+            var query = _appDbContext.Blogs
+                .AsNoTracking()
+                .OrderByDescending(x => x.Blog_Id);
+            var lst = await query.Skip((pageNo - 1) * pageSize).Take(pageSize).ToListAsync();
+            var rowCount = await query.CountAsync();
+            var pageCount = rowCount / pageSize;
+            if (rowCount % pageSize > 0)
+            {
+                pageCount++;
+            }
+
+            BlogResponseModel model = new BlogResponseModel()
+            {
+                Data = lst,
+                PageSetting = new PageSettingModel(pageNo, pageSize, pageCount, rowCount)
+            };
+            return View(model);
+        }
+
         public IActionResult Create()
         {
             return View();
