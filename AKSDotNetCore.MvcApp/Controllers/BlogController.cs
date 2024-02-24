@@ -38,7 +38,7 @@ namespace AKSDotNetCore.MvcApp.Controllers
             BlogResponseModel model = new BlogResponseModel()
             {
                 Data = lst,
-                PageSetting = new PageSettingModel(pageNo, pageSize, pageCount, rowCount)
+                PageSetting = new PageSettingModel(pageNo, pageSize, pageCount, rowCount, "/Blog/List")
             };
             return View(model);
         }
