@@ -15,7 +15,7 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 });
 
 //builder.Services.AddScoped<HttpClient>();
-builder.Services.AddScoped(n => 
+builder.Services.AddScoped(n =>
 {
     HttpClient httpClient = new HttpClient()
     {
@@ -56,3 +56,5 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+
