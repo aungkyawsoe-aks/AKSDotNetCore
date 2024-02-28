@@ -16,7 +16,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSDotNetCore.AtmConsoleApp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSDotNetCore.MvcApp", "AKSDotNetCore.MvcApp\AKSDotNetCore.MvcApp.csproj", "{F93B8047-5DBC-4934-A10C-B326E1470197}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKSDotNetCore.MinimalApi", "AKSDotNetCore.MinimalApi\AKSDotNetCore.MinimalApi.csproj", "{CCAAC556-63F5-47E2-AF97-139534B4F732}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSDotNetCore.MinimalApi", "AKSDotNetCore.MinimalApi\AKSDotNetCore.MinimalApi.csproj", "{CCAAC556-63F5-47E2-AF97-139534B4F732}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKSDotNetCore.RealtimeChartUsingSignalR", "AKSDotNetCore.RealtimeChartUsingSignalR\AKSDotNetCore.RealtimeChartUsingSignalR.csproj", "{A933BBFD-CDF7-4702-AC3F-625308F32671}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +46,10 @@ Global
 		{CCAAC556-63F5-47E2-AF97-139534B4F732}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCAAC556-63F5-47E2-AF97-139534B4F732}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCAAC556-63F5-47E2-AF97-139534B4F732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A933BBFD-CDF7-4702-AC3F-625308F32671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A933BBFD-CDF7-4702-AC3F-625308F32671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A933BBFD-CDF7-4702-AC3F-625308F32671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A933BBFD-CDF7-4702-AC3F-625308F32671}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,11 @@
 using AKSDotNetCore.MinimalApi;
 using AKSDotNetCore.MinimalApi.Features.Blog;
 using Microsoft.EntityFrameworkCore;
+using NLog.Extensions.Logging;
+
+var logger = LoggerFactory.Create(builder => builder.AddNLog()).CreateLogger<Program>();
+logger.LogInformation("Program has started.");
+Console.ReadKey();
 
 var builder = WebApplication.CreateBuilder(args);
 
