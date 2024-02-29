@@ -2,7 +2,7 @@
     <div id="chart"></div>
 </div>
 
-@section scripts{
+@section scripts {
     <script src="~/js/signalr/dist/browser/signalr.js"></script>
     <script>
         "use strict";
@@ -10,14 +10,17 @@
         var connection = new signalR.HubConnectionBuilder().withUrl("/teamHub").build();
 
         connection.on("ReceiveTeamClientEvent", function (result) {
+            console.log(result);
             let data = JSON.parse(result);
+
+            console.log({ data });
+
             bindChart(data.Labels, data.Series)
         });
 
         connection.start().then(function () {
-            document.getElementById("sendButton").disabled = false;
         }).catch(function (err) {
-            return console.error(err.toString());
+            return console.error(err);
         });
 
         function bindChart(_labels, _series) {
@@ -47,3 +50,4 @@
         }
     </script>
 }
+
