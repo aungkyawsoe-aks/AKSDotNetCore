@@ -25,4 +25,8 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AKSDotNetCore.Services\AKSDotNetCore.Services.csproj" />
+  </ItemGroup>
+
 </Project>

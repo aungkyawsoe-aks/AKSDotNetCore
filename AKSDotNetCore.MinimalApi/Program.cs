@@ -2,6 +2,7 @@ using AKSDotNetCore.MinimalApi;
 using AKSDotNetCore.MinimalApi.Features.Blog;
 using Microsoft.EntityFrameworkCore;
 using NLog.Extensions.Logging;
+using Microsoft.Data.SqlClient;
 
 var logger = LoggerFactory.Create(builder => builder.AddNLog()).CreateLogger<Program>();
 logger.LogInformation("Program has started.");
@@ -18,6 +19,16 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection"));
 }, ServiceLifetime.Transient, ServiceLifetime.Transient);
+
+//builder.Services.AddScoped(n => 
+//    new AdoDotNetService(new SqlConnectionStringBuilder(builder.Configuration.GetConnectionString("DbConnection"))));
+
+builder.Services.AddScoped(n =>
+{
+    string connectionString = builder.Configuration.GetConnectionString("DbConnection")!;
+    SqlConnectionStringBuilder sqlConnectionStringBuilder = new SqlConnectionStringBuilder(connectionString);
+    return new AdoDotNetService(sqlConnectionStringBuilder);
+});
 
 var app = builder.Build();
 

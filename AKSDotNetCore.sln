@@ -20,7 +20,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSDotNetCore.MinimalApi", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSDotNetCore.RealtimeChartUsingSignalR", "AKSDotNetCore.RealtimeChartUsingSignalR\AKSDotNetCore.RealtimeChartUsingSignalR.csproj", "{A933BBFD-CDF7-4702-AC3F-625308F32671}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKSDotNetCore.ThemeApp", "AKSDotNetCore.ThemeApp\AKSDotNetCore.ThemeApp.csproj", "{A8CCF955-58A7-4F27-90E8-5CB39D08F8AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSDotNetCore.ThemeApp", "AKSDotNetCore.ThemeApp\AKSDotNetCore.ThemeApp.csproj", "{A8CCF955-58A7-4F27-90E8-5CB39D08F8AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKSDotNetCore.Services", "AKSDotNetCore.Services\AKSDotNetCore.Services.csproj", "{36BC46E0-3F6D-45A9-822E-D9FC01572F9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +58,10 @@ Global
 		{A8CCF955-58A7-4F27-90E8-5CB39D08F8AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8CCF955-58A7-4F27-90E8-5CB39D08F8AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8CCF955-58A7-4F27-90E8-5CB39D08F8AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36BC46E0-3F6D-45A9-822E-D9FC01572F9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36BC46E0-3F6D-45A9-822E-D9FC01572F9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36BC46E0-3F6D-45A9-822E-D9FC01572F9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36BC46E0-3F6D-45A9-822E-D9FC01572F9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
