@@ -24,9 +24,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSDotNetCore.ThemeApp", "A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSDotNetCore.Services", "AKSDotNetCore.Services\AKSDotNetCore.Services.csproj", "{36BC46E0-3F6D-45A9-822E-D9FC01572F9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKSDotNetCore.BlazorWasm", "AKSDotNetCore.BlazorWasm\AKSDotNetCore.BlazorWasm.csproj", "{49FE2EF8-82A3-4CCB-9087-40EA87EDDA5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSDotNetCore.BlazorWasm", "AKSDotNetCore.BlazorWasm\AKSDotNetCore.BlazorWasm.csproj", "{49FE2EF8-82A3-4CCB-9087-40EA87EDDA5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKSDotNetCore.Models", "AKSDotNetCore.Models\AKSDotNetCore.Models.csproj", "{12C02971-2B1C-4CB2-AC41-21FB246B467C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSDotNetCore.Models", "AKSDotNetCore.Models\AKSDotNetCore.Models.csproj", "{12C02971-2B1C-4CB2-AC41-21FB246B467C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKSDotNetCore.BlazorServer", "AKSDotNetCore.BlazorServer\AKSDotNetCore.BlazorServer.csproj", "{3FA659DA-4196-4160-A0CA-526939FF9D65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -74,6 +76,10 @@ Global
 		{12C02971-2B1C-4CB2-AC41-21FB246B467C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12C02971-2B1C-4CB2-AC41-21FB246B467C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12C02971-2B1C-4CB2-AC41-21FB246B467C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FA659DA-4196-4160-A0CA-526939FF9D65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FA659DA-4196-4160-A0CA-526939FF9D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FA659DA-4196-4160-A0CA-526939FF9D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FA659DA-4196-4160-A0CA-526939FF9D65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
