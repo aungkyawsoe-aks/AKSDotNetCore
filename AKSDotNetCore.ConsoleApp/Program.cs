@@ -20,14 +20,14 @@ using Serilog.Sinks.MSSqlServer;
 //Console.WriteLine("Hello, World!");
 //Log.Information("Hello, world!");
 
-AdoDotNetCoreExample adoDotNetExample = new AdoDotNetCoreExample();
-adoDotNetExample.Run();
+//AdoDotNetCoreExample adoDotNetExample = new AdoDotNetCoreExample();
+//adoDotNetExample.Run();
 
 //DapperExample dapperExample = new DapperExample();
 //dapperExample.Run();
 
-//EFCoreExample eFCoreExample = new EFCoreExample();
-//eFCoreExample.Run();
+EFCoreExample eFCoreExample = new EFCoreExample();
+eFCoreExample.Run();
 
 //HttpClientExample httpClientExample = new HttpClientExample();
 //await httpClientExample.Run();

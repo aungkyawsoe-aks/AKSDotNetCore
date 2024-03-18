@@ -32,7 +32,14 @@ namespace AKSDotNetCore.RestApi.Controllers
             {
                 pageCount++;
             }
-            return Ok(new { IsEndofPage = pageNo >= pageCount, pageCount = pageCount, pageSize = pageSize, pageNo = pageNo, Data = lst });
+            return Ok(new BlogListResponseModel 
+            { 
+                IsEndofPage = pageNo >= pageCount, 
+                pageCount = pageCount, 
+                pageSize = pageSize, 
+                pageNo = pageNo, 
+                Data = lst 
+            });
         }
 
         [HttpGet("{id}")]

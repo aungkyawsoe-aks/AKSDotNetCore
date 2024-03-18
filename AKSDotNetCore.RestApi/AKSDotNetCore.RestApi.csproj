@@ -19,4 +19,12 @@
 		<PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Models\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\AKSDotNetCore.Models\AKSDotNetCore.Models.csproj" />
+	</ItemGroup>
+
 </Project>
